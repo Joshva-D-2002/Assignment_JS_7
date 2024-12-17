@@ -1,0 +1,53 @@
+#o-description{
+    text-align: center;
+    color: tomato;
+}
+#metadata{
+    text-align: center;
+}
+#card-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.card{
+    height: 250px;
+    width: 250px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(191, 246, 246);
+    box-shadow: 5px 5px 10px burlywood;
+    cursor: pointer;
+}
+#container{
+    width: 500px;
+    margin: auto;
+}
+button{
+    height: 30px;
+    width: 200px;
+    background-color: cadetblue;
+    margin: 20px;
+    cursor: pointer;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+form div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 8px;
+}
+#submit{
+    margin: auto;
+}
+.err{
+    color: red;
+}
