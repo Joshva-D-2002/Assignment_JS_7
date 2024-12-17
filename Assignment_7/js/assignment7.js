@@ -76,7 +76,7 @@ sortBtn.addEventListener("click", function () {
   displayCards(itemsList);
 });
 
-function sortedItems(items){
+function sortItemByPrice(items){
   return items.sort((a, b) => a.price - b.price);
 }
 const form1 = document.getElementById("addProduct");
