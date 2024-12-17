@@ -71,13 +71,14 @@ filterBtn.addEventListener("click", function () {
 const sortBtn = document.getElementById("sort-btn");
 
 sortBtn.addEventListener("click", function () {
-  const sortedItems = itemsList.sort((a, b) => {
-    return a.price - b.price;
-  });
+  const sortedItems = sortItemByPrice(itemsList);
   itemsList = [...sortedItems];
   displayCards(itemsList);
 });
 
+function sortedItems(items){
+  return items.sort((a, b) => a.price - b.price);
+}
 const form1 = document.getElementById("addProduct");
 
 form1.addEventListener("submit", function (event) {
@@ -93,7 +94,7 @@ form1.addEventListener("submit", function (event) {
   nameErr.textContent = "";
   descriptionErr.textContent = "";
   priceErr.textContent = "";
-  
+
   if (name.trim() === "") {
     nameErr.textContent = "Name is Required";
     isValid = false;
